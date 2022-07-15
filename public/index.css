@@ -1,0 +1,19 @@
+#mainContainer {
+  display: flex;
+  flex-wrap: wrap;
+  width: 600px;
+  height: 600px;
+}
+
+.spot {
+  width: 200px;
+  height: 200px;
+}
+
+body {
+  display: flex;
+}
+
+p {
+  margin-left: 100px;
+}
