@@ -28,4 +28,9 @@ io.on("connection", (socket) => {
   socket.on("space", (index) => {
     socket.broadcast.emit("space", index);
   });
+
+  socket.on("disconnect", () => {
+    if (player2.connected) player2.connected = false;
+    else if (player1.connected) player1.connected = false;
+  });
 });
